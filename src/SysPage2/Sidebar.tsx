@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface SidebarProps2 {
   title: string;
@@ -19,9 +20,9 @@ const Sidebar = (props: SidebarProps2) => {
         <ul className="space-y-2">
           {menuItems.map((item, index) => (
             <li key={index}>
-              <a href={item.link} className="text-blue-400 hover:underline">
+              <Link to={item.link} className="text-blue-400 hover:underline">
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -30,5 +31,4 @@ const Sidebar = (props: SidebarProps2) => {
   );
 };
 
-export default Sidebar;
-
+export default Sidebar;    
