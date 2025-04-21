@@ -1,4 +1,4 @@
-import React from 'react';
+import React from'react';
 
 const Yingyong = () => {
   return (
@@ -62,7 +62,16 @@ const Yingyong = () => {
       <div className="mb-12 bg-white p-6 rounded-lg shadow-md transition duration-300 hover:shadow-xl">
         <h3 className="text-2xl font-bold mb-4 text-green-600">三. 进行支付的全过程</h3>
         <p className="mb-3 text-lg font-semibold">1. 过程</p>
-        <p className="mb-3"> - 创建钱包 → 获取DOGE → 输入地址转账 → 1分钟内初步确认 → 到账可用</p>
+        <p className="mb-3 text-lg font-semibold"> - a.创建钱包</p>
+        <p className="mb-3">   - 用户需先下载支持DOGE的钱包（如MultiDoge、Trust Wallet、Ledger硬件钱包等），生成公钥（接收地址）和私钥（用于签名交易）。</p>
+        <p className="mb-3 text-lg font-semibold"> - b.获取DOGE</p>
+        <p className="mb-3">   - 通过加密货币交易所（如Binance、Coinbase）购买DOGE，或通过他人转账接收。</p>
+        <p className="mb-3 text-lg font-semibold"> - c.发起支付</p>
+        <p className="mb-3">   -发送方输入接收方的DOGE地址、转账金额，确认交易细节后签名并广播到DOGE网络。</p>
+        <p className="mb-3 text-lg font-semibold"> - d.网络确认</p>
+        <p className="mb-3">   - DOGE网络通过工作量证明（PoW）机制验证交易，平均每**1分钟**生成一个新区块，通常1-6个区块确认（约1-6分钟）即可视为交易完成。</p>
+        <p className="mb-3 text-lg font-semibold"> - e.接收方到账</p>
+        <p className="mb-3">   - 接收方的钱包显示余额更新，资金可用于后续支付或兑换为其他资产。</p>
         <p className="mb-3 text-lg font-semibold">2. 便捷性</p>
         <p className="mb-3"> - 快（1分钟确认），简单（扫码支付），跨境无阻，被部分平台接受。</p>
         <p className="mb-3 text-lg font-semibold">3. 安全性</p>
@@ -84,4 +93,4 @@ const Yingyong = () => {
   );
 };
 
-export default Yingyong;    
+export default Yingyong;
